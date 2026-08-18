@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manantsoa | Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h2>Data.Eng</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1 id="greeting">Hi, I'm Manantsoa</h1>
+            <p class="subtitle">Data Engineer | Building Scalable Data Pipelines</p>
+            <p>I transform raw, messy data into clean, reliable, and actionable insights.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            
+            <!-- Your Picture and Info -->
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Manantsoa" class="profile-img">
+                <h3>Manantsoa</h3>
+                <p class="location">🇲🇬 Malagasy from Madagascar</p>
+            </div>
+
+            <!-- Bio and Skills -->
+            <div class="about-text">
+                <p>I am a Data Engineer passionate about designing and optimizing cloud-based data architectures. I specialize in ETL/ELT workflows, data modeling, and ensuring data quality across the pipeline.</p>
+                <p>When I'm not writing SQL or orchestrating Airflow DAGs, I'm exploring real-time streaming technologies and cloud infrastructure.</p>
+                
+                <h4 class="skills-title">Core Skills</h4>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Apache Airflow</span>
+                    <span class="skill-tag">dbt</span>
+                    <span class="skill-tag">Snowflake</span>
+                    <span class="skill-tag">AWS / GCP</span>
+                    <span class="skill-tag">Apache Spark</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="container bg-light">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>End-to-End ETL Pipeline</h3>
+                <p>An automated pipeline that extracts e-commerce API data, transforms it with PySpark, and loads it into Snowflake.</p>
+                <div class="project-tech">
+                    <span>PySpark</span> <span>Airflow</span> <span>Snowflake</span>
+                </div>
+                <a href="https://github.com/NtsoaBe/trino-hive-docker" class="project-link" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Real-Time Log Analytics</h3>
+                <p>A streaming application that processes server logs, identifies anomalies, and stores metrics for visualization.</p>
+                <div class="project-tech">
+                    <span>Kafka</span> <span>Python</span> <span>PostgreSQL</span>
+                </div>
+                <a href="#" class="project-link" target="_blank">View on GitHub &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Financial Data Modeling</h3>
+                <p>Comprehensive dbt transformation project implementing dimensional modeling and automated data quality tests.</p>
+                <div class="project-tech">
+                    <span>SQL</span> <span>dbt</span> <span>BigQuery</span>
+                </div>
+                <a href="#" class="project-link" target="_blank">View on GitHub &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Let's Connect</h2>
+        <p>Looking to collaborate on a data project or discuss architecture?</p>
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manantsoaharima@gmail">Email Me</a>
+            <a href="https://github.com/NtsoaBe" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/toky-harimanantsoa-andrianantenaina-61476b255/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
