@@ -1,29 +1,10 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetElement = document.querySelector(this.getAttribute('href'));
-        
-        window.scrollTo({
-            top: targetElement.offsetTop - 70, // Adjusts for the fixed navigation bar
-            behavior: 'smooth'
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    // Select the hamburger menu and the navigation links container
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle the 'active' class to show/hide the menu on mobile
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
 });
-
-// Dynamic Greeting based on time of day
-window.onload = function() {
-    const hour = new Date().getHours();
-    let greetingText = "Hi, I'm Manantsoa";
-    
-    if (hour < 12) {
-        greetingText = "Good Morning! I'm Manantsoa";
-    } else if (hour < 18) {
-        greetingText = "Good Afternoon! I'm Manantsoa";
-    } else {
-        greetingText = "Good Evening! I'm Manantsoa";
-    }
-    
-    document.getElementById('greeting').innerText = greetingText;
-}

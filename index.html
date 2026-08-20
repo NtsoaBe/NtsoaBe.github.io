@@ -3,104 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manantsoa | Data Engineer Portfolio</title>
+    <title>Manantsoa - Data Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-            <h2>Data.Eng</h2>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="top-nav">
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="Manantsoa_CV.pdf" target="_blank" rel="noopener noreferrer">CV/Resume</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     </nav>
 
-    <header>
-        <div class="header-content">
-            <h1 id="greeting">Hi, I'm Manantsoa</h1>
-            <p class="subtitle">Data Engineer | Building Scalable Data Pipelines</p>
-            <p>I transform raw, messy data into clean, reliable, and actionable insights.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
-
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-            
-            <!-- Your Picture and Info -->
-            <div class="profile-card">
-                <img src="profile.jpg" alt="Manantsoa" class="profile-img">
-                <h3>Manantsoa</h3>
-                <p class="location">🇲🇬 Malagasy from Madagascar</p>
-            </div>
-
-            <!-- Bio and Skills -->
-            <div class="about-text">
-                <p>I am a Data Engineer passionate about designing and optimizing cloud-based data architectures. I specialize in ETL/ELT workflows, data modeling, and ensuring data quality across the pipeline.</p>
-                <p>When I'm not writing SQL or orchestrating Airflow DAGs, I'm exploring real-time streaming technologies and cloud infrastructure.</p>
+    <div class="container">
+        <aside class="sidebar">
+            <!-- Replace the src with your actual image path -->
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Manantsoa</h2>
+            <p class="title">Data Engineer</p>
+            <ul class="contact-info">
+                <!-- Location with Madagascar Flag -->
+                <li style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="24" height="16" viewBox="0 0 90 60" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #ddd; border-radius: 2px;">
+                        <rect width="30" height="60" fill="#FFFFFF"/>
+                        <rect x="30" width="60" height="30" fill="#FC3D32"/>
+                        <rect x="30" y="30" width="60" height="30" fill="#007E3A"/>
+                    </svg>
+                    Antananarivo, MG
+                </li>
                 
-                <h4 class="skills-title">Core Skills</h4>
-                <div class="skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Apache Airflow</span>
-                    <span class="skill-tag">dbt</span>
-                    <span class="skill-tag">Snowflake</span>
-                    <span class="skill-tag">AWS / GCP</span>
-                    <span class="skill-tag">Apache Spark</span>
-                </div>
-            </div>
+                <!-- LinkedIn (Kept the chain link emoji, but aligned it nicely) -->
+                <li style="display: flex; align-items: center; gap: 8px;">
+                    🔗 <a href="https://www.linkedin.com/in/toky-harimanantsoa-andrianantenaina-61476b255/">LinkedIn</a>
+                </li>
+                
+                <!-- GitHub with Official Logo -->
+                <li style="display: flex; align-items: center; gap: 8px;">
+                    <svg height="20" width="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#555">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    <a href="https://github.com/NtsoaBe">GitHub</a>
+                </li>
+            </ul>
+        </aside>
 
-        </div>
-    </section>
+        <main class="content">
+            <h1>Manantsoa</h1>
+            <h3 class="subtitle">Data Engineer | Analytics Engineer | LookML Developer</h3>
 
-    <section id="projects" class="container bg-light">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>End-to-End ETL Pipeline</h3>
-                <p>An automated pipeline that extracts e-commerce API data, transforms it with PySpark, and loads it into Snowflake.</p>
-                <div class="project-tech">
-                    <span>PySpark</span> <span>Airflow</span> <span>Snowflake</span>
-                </div>
-                <a href="https://github.com/NtsoaBe/trino-hive-docker" class="project-link" target="_blank">View on GitHub &rarr;</a>
-            </div>
+            <section class="about-me">
+                <h2>About Me</h2>
+                In my daily life, I am naturally fact-driven and always verify the data before drawing conclusions or providing solutions. This analytical mindset pushed me to study Mathematics at university, which helped me develop strong logical and problem-solving skills, as well as a passion for statistics. Now, I apply all these skills in data engineering, turning raw data into clear and useful information. Knowing that other users can easily consume this data brings me real satisfaction. I am truly passionate about what I do
+            </section>
 
-            <div class="project-card">
-                <h3>Real-Time Log Analytics</h3>
-                <p>A streaming application that processes server logs, identifies anomalies, and stores metrics for visualization.</p>
-                <div class="project-tech">
-                    <span>Kafka</span> <span>Python</span> <span>PostgreSQL</span>
-                </div>
-                <a href="#" class="project-link" target="_blank">View on GitHub &rarr;</a>
-            </div>
+            <section class="projects" id="projects">
+                <h2>Featured Projects</h2>
+                <p class="section-intro">Here are some of my recent open-source data projects:</p>
+                <ul class="project-list">
+                    <li>
+                        <strong>Dataplatform project:</strong> Developing a simple, scalable, and modular Data Platform using open-source technologies. In this project, we implement the Medallion and Data Lakehouse architectures. 
+                        <br><a href="https://github.com/NtsoaBe/trino-hive-docker" target="_blank" class="github-link">[View on GitHub]</a>
+                    </li>
+                    <!-- <li>
+                        <strong>Analytics Engineering with dbt & Looker:</strong> Transformed raw ingested data into clean, business-ready models. Designed a semantic layer using LookML to enable self-service analytics for BI developers.
+                        <br><a href="#" target="_blank" class="github-link">[View on GitHub]</a>
+                    </li>
+                    <li>
+                        <strong>Automated Infrastructure Provisioning:</strong> Created a scalable, distributed architecture on Kubernetes using Terraform (IaC) to automatically deploy data platform resources.
+                        <br><a href="#" target="_blank" class="github-link">[View on GitHub]</a>
+                    </li> -->
+                </ul>
+            </section>
 
-            <div class="project-card">
-                <h3>Financial Data Modeling</h3>
-                <p>Comprehensive dbt transformation project implementing dimensional modeling and automated data quality tests.</p>
-                <div class="project-tech">
-                    <span>SQL</span> <span>dbt</span> <span>BigQuery</span>
-                </div>
-                <a href="#" class="project-link" target="_blank">View on GitHub &rarr;</a>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <h2>Let's Connect</h2>
-        <p>Looking to collaborate on a data project or discuss architecture?</p>
-        <div class="social-links">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manantsoaharima@gmail">Email Me</a>
-            <a href="https://github.com/NtsoaBe" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/toky-harimanantsoa-andrianantenaina-61476b255/" target="_blank">LinkedIn</a>
-        </div>
-    </footer>
-
+            <section class="contact-section" id="contact">
+                <h2>Contact</h2>
+                    <p>Feel free to reach out to discuss new opportunities!</p>
+                    <div class="contact-buttons">
+                        <!-- Your Gmail -->
+                        <a href="mailto:manantsoaharima@gmail.com" class="btn email-btn">✉️ Email Me</a>
+                        
+                        <!-- Your WhatsApp -->
+                        <a href="https://wa.me/261345426623" target="_blank" class="btn whatsapp-btn">💬 WhatsApp</a>
+                    </div>
+            </section>
+        </main>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
